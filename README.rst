@@ -36,5 +36,5 @@ Please be very careful before its usage! Use this script/code only for education
 - 검색 옵션에서 serarch, chromedriver 는 필수임.
 
 `
-> python bing_scraper.py --limit 10 --serarch '노무현' --chromedriver c:/ProgramData/chromedriver/chromedriver.exe
+$ python bing_scraper.py --limit 10 --serarch '노무현' --chromedriver c:/ProgramData/chromedriver/chromedriver.exe
 `

@@ -35,6 +35,6 @@ Please be very careful before its usage! Use this script/code only for education
 - 본 코드는 다음과 같이 bing을 이용하여 실행될 수 있음. 
 - 검색 옵션에서 serarch, chromedriver 는 필수임.
 
-<pre>
+<pre><code>
 > python bing_scraper.py --limit 10 --serarch '노무현' --chromedriver c:/ProgramData/chromedriver/chromedriver.exe
-</pre>
+</code></pre>

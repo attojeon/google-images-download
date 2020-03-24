@@ -117,6 +117,22 @@ def user_input():
         parser.add_argument('-is', '--save_source', help="creates a text file containing a list of downloaded images along with source page url", type=str, required=False)
 
         args = parser.parse_args()
+        
+        ###################################################
+        # argument를 다음과 같이 변경함.
+        #   - chromedriver 는 반드시 입력해야함. ex) --chromedirever c:/ProgramData/chromedriver/chromedriver.exe
+        #   - 기본검색, bing을 사용하도록 함.
+        #
+        # args.limit = 100
+        # args.search = '2 of diamond card'
+        # args.chromedriver = 'c:/ProgramData/chromedriver/chromedriver.exe'
+        args.download = True   # False 이면 다운받지 않고 목록 출력만 함. 디버깅용        
+
+        if args.search:  # construct url
+            args.url = 'https://www.bing.com/images/search?q=%s' % args.search.replace(' ', '%20')
+            args.image_directory = args.search.replace(' ', '_')
+        ###################################################
+        
         arguments = vars(args)
         records = []
         records.append(arguments)

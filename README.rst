@@ -33,7 +33,8 @@ Please be very careful before its usage! Use this script/code only for education
 - 구글 이미지 다운로드에 대한 큰 변화로 인해, 자동 다운로드 지원되지 않음. 
 - 구글은 클릭을 해야만, 이미지에 대한 url이 나타나도록 자바스크립트를 추가해 놓은 것으로 보임. => 추가 해결방법이 나올 수 있을 듯.
 - 본 코드는 다음과 같이 bing을 이용하여 실행될 수 있음. 
+- 검색 옵션에서 serarch, chromedriver 는 필수임.
 
-```
-> python bing_scraper.py --limit 10 --serarch '노무현' 
+``` python
+> python bing_scraper.py --limit 10 --serarch '노무현' --chromedriver c:/ProgramData/chromedriver/chromedriver.exe
 ```

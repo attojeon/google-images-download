@@ -35,5 +35,5 @@ Please be very careful before its usage! Use this script/code only for education
 - 본 코드는 다음과 같이 bing을 이용하여 실행될 수 있음. 
 
 ```
-   > python bing_scraper.py --limit 10 --serarch '노무현' 
+> python bing_scraper.py --limit 10 --serarch '노무현' 
 ```
